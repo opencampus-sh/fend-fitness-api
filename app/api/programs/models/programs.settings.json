@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "program",
+  "info": {
+    "name": "Program",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Difficulty": {
+      "type": "enumeration",
+      "enum": [
+        "beginner",
+        "intermediate",
+        "hard"
+      ]
+    },
+    "Focus": {
+      "type": "enumeration",
+      "enum": [
+        "weightloss",
+        "strength",
+        "cardio"
+      ]
+    },
+    "Duration": {
+      "type": "integer"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "workouts": {
+      "collection": "workout"
+    }
+  }
+}

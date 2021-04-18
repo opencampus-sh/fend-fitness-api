@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "exercises",
+  "info": {
+    "name": "Exercise",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "duration",
+        "reps"
+      ],
+      "required": true
+    },
+    "Calories": {
+      "type": "integer"
+    },
+    "Duration": {
+      "type": "integer"
+    },
+    "Reps": {
+      "type": "integer"
+    },
+    "Categories": {
+      "type": "component",
+      "repeatable": true,
+      "component": "categories.categories"
+    }
+  }
+}

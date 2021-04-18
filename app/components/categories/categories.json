@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_categories_categories",
+  "info": {
+    "name": "Categories",
+    "icon": "file"
+  },
+  "options": {},
+  "attributes": {
+    "Category": {
+      "type": "enumeration",
+      "enum": [
+        "strength",
+        "cardio",
+        "coordination",
+        "mobility"
+      ]
+    }
+  }
+}
